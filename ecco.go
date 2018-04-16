@@ -1,4 +1,5 @@
-/* http-echo.go
+/* ecco.go
+ * Tiny fast http echo server
  */
 
 package main
@@ -35,7 +36,7 @@ func main() {
 		fmt.Fprintf(w, RespT, name, r.RemoteAddr, r.Host, r.Proto, r.Method, r.URL.Path)
 	})
 
-	log.Printf("Running `%s` and listening port 8000\n", name)
+	log.Printf("Running as `%s` and listening port 8000\n", name)
 
 	http.ListenAndServe(":8000", nil)
 }

@@ -2,4 +2,4 @@
 
 set -x \
   && go fmt \
-  && go run http-echo.go
+  && go run ecco.go

@@ -1,2 +1,2 @@
 #!/bin/sh
-/app/http-echo "$@"
+/app/ecco "$@"
