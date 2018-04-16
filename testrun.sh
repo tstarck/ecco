@@ -2,4 +2,4 @@
 
 set -x \
   && go fmt \
-  && go run ecco.go
+  && go run ecco.go "$@"
